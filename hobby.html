@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby | Dayang</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: #f5e9f7;
+            line-height: 1.6;
+            padding: 20px;
+            text-align: center;
+            background-color: #3d2c41;
+            background-image: url('image/background.jpg'); background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(61, 44, 65, 0.8); 
+            z-index: 0;
+        }
+
+        
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #a64d79;
+        }
+
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        
+        .image-container {
+            margin-bottom: 60px;
+        }
+
+        
+        .image-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); 
+            border: 5px solid #a64d79;
+        }
+
+        
+        footer {
+            font-size: 14px;
+            color: #d0bdd8;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="content">
+        <h1>Hobby</h1>
+        <p>Memorable: Leisure time</p>
+
+        
+        <br>
+        <div class="image-container">
+            <img src="image/buku.jpg" alt="Membaca">
+            <p>I like reading, but sometimes I just want to enjoy buying new books even if I don’t always read them. I enjoy reading fantasy, religious, and thriller books rather than romance or loving novel. I usually read based on my mood and only if the book is interesting.</p>
+        </div>
+
+
+        <br><br>
+        <div class="image-container">
+            <img src="image/gameyah.webp" alt="Bermain game">
+            <p>One of my hobbies is also playing video games, although I rarely play nowadays. I used to play a lot during the lockdown period, but it’s been a while since then. Still, I believe gaming can help you relax and has many benefits which are it can improves focus because when we play the game we need to focus on the target and strategies of playing, encourages creativity aim, and helps with problem solving skills with indirectly.</p>
+        </div>
+
+        <br><br>
+        <div class="image-container">
+            <img src="image/view.jpg" alt="Melihat pantai">
+            <p>I also enjoy looking at the beach because it makes me feel calm, even though I’m actually a bit scared of the sea, maybe it’s because within the calmness of the sea, there are countless hidden secrets, it may look calms but it can be more dangerous in hidden.</p>
+        </div>
+    </div>
+
+
+     <footer>
+       &copy; 2025 Dayang. All Rights Reserved.
+     </footer>
+    </div>
+
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+

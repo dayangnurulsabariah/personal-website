@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Dayang's Website</title>
+    <style>
+       
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #f5e9f7;
+            background-image: url('image/background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+       
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(61, 44, 65, 0.75);
+            z-index: 0;
+        }
+
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-size: 36px;
+            color: #a64d79;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 50px;
+            font-size: 30px;
+            color: #d67fa3;
+        }
+
+        
+        p {
+            font-size: 18px;
+            color: #e6d5ee;
+        }
+
+        
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .image-container figure, .center-image figure {
+            margin: 0;
+        }
+
+        .image-container img, .center-image img {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover, .center-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption, figcaption {
+            font-size: 16px;
+            color: #cbb9d4;
+            margin-top: 10px;
+        }
+
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #bda9cb;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Education - Journey</h1>
+    <p>I would like to share my educational journey from school to where I am now in my diploma studies.</p>
+    <br>
+     
+    <div class="image-container">
+        <figure>
+            <img src="image/bandaraya.jpg" alt="My School" title="My School">
+            <figcaption>My School</figcaption>
+        </figure>
+        <figure>
+            <img src="image/lev.jpg" alt="My Friends" title="School Friends">
+            <figcaption>School Friends</figcaption>
+        </figure>
+        <figure>
+            <img src="image/selamat.jpg" alt="SPM Graduation" title="SPM Graduation">
+            <figcaption>SPM Graduation</figcaption>
+        </figure>
+    </div>
+ 
+    <br>
+    <p><strong>My School Life:</strong> I graduated from high school after completing my SPM. My secondary school wasn’t my dream school at first, but Allah’s plan is always better, so here I am now. I met a lot of people there, especially friends from primary school. It was a nice experience, but no matter where we are, it’s important to pick friends who truly bring out the best in us. It was a time full of learning, friendships, and unforgettable memories. Here are some pictures from my school days!</p>
+        
+    <br>
+    <p><strong>Currently Pursuing My Diploma:</strong> Now, I am currently pursuing my diploma in Library Informatics Science. I never expected to get this UPU offer because at first, I only wanted to go to STPM but maybe this is the best choice after all. It's been a great journey so far, full of new challenges and exciting learning opportunities. I'm looking forward to achieving more and continuing to grow in my education.</p>
+
+
+     <br><br>
+     <h2>People I Met During My Diploma</h2>
+     <br>
+     <div class="center-image">
+        <figure>
+            <img src="image/people.png" alt="People" title="Met">
+            <figcaption>Met</figcaption>
+        </figure>
+    </div>
+    
+    <p>Throughout my diploma journey, I've met amazing people who made this chapter of life more challenging. These friends have been part of me grow, laugh, and stay strong. Diploma life has taught me lessons from many angles. Studying far from home made me truly feel the weight and complexity of life—but that’s just part of its nature. After all, people come and go, especially once this diploma journey comes to an end.</p>
+
+    
+     <br><br>
+     <h2>Struggle of Being Far From Home</h2>
+     <br>
+     <div class="image-container">
+        <figure>
+            <img src="image/bye.jpg" alt="Feeling Homesick" title="Far From Home">
+            <figcaption>Leaving Sabah and adjusting to Kedah life</figcaption>
+        </figure>
+        <figure>
+            <img src="image/masjid.jpg" alt="Feeling Homesick" title="Far From Home">
+            <figcaption>Leaving Sabah and adjusting to Kedah life</figcaption>
+        </figure>
+        <figure>
+            <img src="image/airport.jpg" alt="Feeling Homesick" title="Far From Home">
+            <figcaption>Leaving Sabah and adjusting to Kedah life</figcaption>
+        </figure>
+    </div>
+
+      <p>Coming all the way from Sabah to study in Kedah was a big step. Living away from family, adapting to a new environment, and facing everything on my own really shaped who I am today and I had to make sacrifices to study far from home whic is one of the biggest was only being able to go back during semester breaks. While I saw some of my friends going home almost every week, sometimes I couldn’t help but feel a little jealous. But it’s okay—this is part of my journey, and I’ve learned to embrace it.</p>
+
+   
+     <br><br>
+     <footer>
+        &copy; 2025 Dayang. All Rights Reserved.
+     </footer>
+    </div>
+
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+

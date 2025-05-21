@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dayang's website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #3d2c41;
+            text-align: center;
+            padding: 20px;
+        }
+
+     
+        .animated-title {
+            font-size: 42px;
+            color: #1c1c1c;
+            text-shadow: 0 0 5px #444, 0 0 10px #555, 0 0 15px #666;
+            padding: 20px 0;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #a64d79;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(255, 192, 203, 0.2);
+            position: relative;
+        }
+
+        .button::before {
+            content: '★ ';
+            color: #ffd1ec;
+            font-size: 18px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 1500px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        p {
+            font-size: 18px;
+            color: #f5e9f7;
+        }
+
+        hr {
+            border: 1px solid #775f84;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <h1 class="animated-title" id="title">Welcome to my personal website</h1>
+    <hr>
+
+
+    <p style="color: #e6d5ee; font-size: 17px;">
+        Assalamualaikum and hi. I'm Dayang — a seeker of peace, meaning, and knowledge. This website is my personal space, where I share small parts of my journey, reflections, and identity.
+    </p>
+    <hr>
+
+    
+    <img src="image/mukadepan.jpg" width="1500" height="300">
+    <br>
+    <hr>
+
+    
+    <a href="me.html" class="button" onmouseover="animateButton(this)" onmouseout="resetButton(this)">About Me</a>
+    <a href="hobby.html" class="button" onmouseover="animateButton(this)" onmouseout="resetButton(this)">Hobby</a>
+    <a href="educate.html" class="button" onmouseover="animateButton(this)" onmouseout="resetButton(this)">Education</a>
+    <a href="fam.html" class="button" onmouseover="animateButton(this)" onmouseout="resetButton(this)">Family & Friends</a>
+    <a href="town.html" class="button" onmouseover="animateButton(this)" onmouseout="resetButton(this)">Hometown</a>
+    <a href="schedule.html" class= "button" onmouseover="animateButton(this)" onmouseout="resetButton(this)">Schedule</a>  
+    <a href="quote.html" class="button" onmouseover="animateButton(this)" onmouseout="resetButton(this)">Quotes in my life</a>
+  
+    <hr><br>
+
+   
+    <footer style="font-size: 14px; color: #bda9cb; margin-top: 40px; text-align: center;">
+        &copy; 2025 Dayang. All rights reserved.
+    </footer>
+
+   
+    <script>
+        // Untuk tajuk: gerak perlahan naik turun hanya sekali pada page load
+        let title = document.getElementById("title");
+        let direction = 1;
+        let position = 0;
+        let hasAnimated = false;  // To ensure the animation only happens once
+
+        // Function to animate title when the page loads
+        window.onload = function() {
+            if (!hasAnimated) {
+                animateTitle();
+                hasAnimated = true;  // Set to true so the animation doesn't repeat
+            }
+        };
+
+        function animateTitle() {
+            let interval = setInterval(function() {
+                position += direction;
+                title.style.top = position + "px";
+
+                if (position > 5 || position < -5) {
+                    direction *= -1; // Reverse direction after reaching limits
+                }
+
+                if (Math.abs(position) > 5) {
+                    clearInterval(interval); // Stop animation once the movement is complete
+                }
+            }, 10);
+        }
+
+       
+        function animateButton(button) {
+            button.style.transform = "scale(1.1)";
+            button.style.boxShadow = "0 6px 12px rgba(255, 192, 203, 0.4)";
+        }
+
+        function resetButton(button) {
+            button.style.transform = "scale(1)";
+            button.style.boxShadow = "0 4px 6px rgba(255, 192, 203, 0.2)";
+        }
+    </script>
+
+</body>
+</html>
+
+
+ 
